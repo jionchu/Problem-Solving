@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /* E-PPER
  * Q1: 윤년 판별하기
- * created at 2020.02.09
+ * created on 2020.02.09
  * created by jionchu */
 
 public class Q1 {

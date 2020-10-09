@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /* E-PPER 14회
  * Q2: 평균을 넘는 학생들의 비율
- * created at 2020.02.09
+ * created on 2020.02.09
  * created by jionchu */
 
 public class Q2 {
