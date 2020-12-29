@@ -1,4 +1,4 @@
-/* Programmars
+/* Programmers
  * 2020 KAKAO BLIND RECRUITMENT - 문자열 압축
  * created on 2020.09.05
  * created by jionchu */

@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Iterator;
 
-/* Programmars
+/* Programmers
  * 해시 - 위장
  * created on 2020.09.02
  * created by jionchu */

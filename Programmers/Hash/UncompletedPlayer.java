@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-/* Programmars
+/* Programmers
  * 해시 - 완주하지 못한 선수
  * created on 2020.08.26
  * created by jionchu */
