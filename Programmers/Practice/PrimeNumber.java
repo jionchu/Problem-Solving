@@ -1,4 +1,9 @@
-class Solution {
+/* Programmers
+ * 연습문제 - 소수 찾기
+ * created on 2020.02.04
+ * created by jionchu */
+
+ class Solution {
   public int solution(int n) {
       int answer = 0;
       
