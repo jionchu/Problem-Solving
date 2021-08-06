@@ -5,36 +5,30 @@
 
 class Solution {
     
-    var limit = 0
-    var answer = 0
-    
     fun solution(stones: IntArray, k: Int): Int {
+        var answer = 0
         
-        limit = k
-        findAnswer(stones, stones.min()!!, stones.max()!!)
+        var min = stones.min()!!
+        var max = stones.max()!!
+        
+        // 이분탐색
+        while (min <= max) {
+            val mid = (min+max)/2
+            
+            if (isCrossingable(stones, mid, k)) {
+                answer = mid
+                min = mid+1
+            }
+            else {
+                max = mid-1
+            }
+        }
         
         return answer
     }
 
-    // 이분탐색
-    fun findAnswer(stones: IntArray, min: Int, max: Int) {
-        if (min != max) {
-
-            val middle = min + (max-min)/2
-
-            if (isCrossingable(stones, middle)) {
-                findAnswer(stones, middle+1, max)
-            } else {
-                findAnswer(stones, min, middle)
-            }
-
-        } else {
-            isCrossingable(stones,min)
-        }
-    }
-
     // num 명의 사람이 징검다리를 건널 수 있는지 확인
-    fun isCrossingable(stones: IntArray, num: Int): Boolean {
+    fun isCrossingable(stones: IntArray, num: Int, limit: Int): Boolean {
         var i = limit-1
         var prev = 0
 
@@ -51,8 +45,7 @@ class Solution {
             // 다음 디딤돌 확인하기
             i += limit
         }
-
-        answer = num
+        
         // 마지막 디딤돌까지 무사히 건넌 경우
         return true
     }
